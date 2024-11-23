@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>System Compromised</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #0f0;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            overflow: hidden;
+            background-image: url('https://img.pikbest.com/ai/illus_our/20230421/f809cd3ba9ef82fbe85cdfde6cf7cfc6.jpg!w700wp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .hacked-text {
+            font-size: 4em;
+            margin: 20px;
+            animation: glitch 1s infinite;
+        }
+        .skull {
+            font-size: 100px;
+            margin: 20px;
+        }
+        .message {
+            font-size: 1.5em;
+            margin: 20px;
+        }
+        .logo {
+            width: 340px;
+            height: 437px;
+            margin: 20px auto;
+            animation: rotate 3s infinite linear;
+        }
+        .hacker-names {
+            font-size: 1.2em;
+            margin-top: 20px;
+            text-shadow: 0 0 10px #0f0;
+            animation: pulse 2s infinite;
+        }
+        .defaced-text {
+            font-size: 1em;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://media.discordapp.net/attachments/1286648116841418864/1286649501800468572/AMARI_1.png?ex=6742647a&is=674112fa&hm=816482c6a0224b6e8509ac3928f3d3292e500a9f1440eb9e5e4b7d895c368779&=&format=webp&quality=lossless&width=340&height=437" class="logo" alt="Hacker Logo">
+    <div class="hacker-names">SERVER HAS BEEN DEFACED BY AIM AMARI</div>
+    <div class="defaced-text">STOP FUCKING WITH ME</div>
+    <script>
+        let seconds = 0;
+        setInterval(() => {
+            seconds++;
+            document.getElementById('timer').textContent = `Time elapsed: ${seconds} seconds`;
+        }, 1000);
+    </script>
+</body>
+</html>
